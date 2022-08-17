@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1>WELCOME USER </h1>
+  <!-- <nav>
+            <div>Add</div>
+            <div>Edit</div> 
+        </nav> -->
+    </header>
+    <main>
+        <div class="book-search">
+            <form class="search-form">
+                <input type="text" name="book-search" id="search-inp" placeholder="Enter Book Title">
+                <input type="date" name="search-inp-date" id="search-inp-date" data-date-format="DD-MM-YYYY" class="none">
+                <button class="search-btn">Search</button>
+            </form>
+            <button class="search-reset">Reset</button>
+            <div class="book-filters">
+                <select name="filter" id="filter">
+                    <option value="title">Title</option>
+                    <option value="author">Author</option>
+                    <option value="publish_date">Publish Date</option>
+                </select>
+            </div>
+        </div>
+        <section class="book-container">
+            <h1>Books</h1>
+            <h3 class="book-count">Book Count - <span></span></h3>
+            <div class="books">
+                <div class="book">
+                    <h1 class="book-title">Book title</h1>
+                    <div class="book-author book-flex">
+                        <h3>Author:</h3>
+                        <span>author-name</span>
+                    </div>
+                    <div class="book-category">
+                        <h3>Category</h3>
+                        <div class="category-list">
+                            <div class="category">category1</div>
+                            <div class="category">category2</div>
+                            <div class="category">c3</div>
+                        </div>
+                    </div>
+                    <div class="book-publish book-flex">
+                        <h3>Publish Date:</h3>
+                        <span>3/3/1990</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="pages">
+            <div class="page">1</div>
+            <div class="page">2</div>
+            <div class="page">3</div>
+            <div class="page">4</div>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>

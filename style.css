@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #bde0fe;
+    --secondary: #023047;
+    --accent: #fb8500;
+}
+
+body{
+    /* background-color: var(--primary);
+    color: var(--secondary); */
+    background: url('lib2.jpg');
+    background-size: cover;
+    
+}
+
+header{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-size: 2rem;
+    align-items: center;
+    margin-left: 530px;
+    color:white;
+}
+
+header nav{
+    display: flex;
+    gap: .5rem;
+}
+
+header nav div{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header nav div:hover{
+    color: var(--accent);
+}
+
+.book-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-search form{
+    margin: 1rem;
+}
+
+.book-container{
+    padding: 1rem;
+    color: white;
+}
+
+.books{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.book{
+    width: 250px;
+    height: 250px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 1rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.book-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.book-title{
+    border-bottom: 1px solid var(--accent);
+}
+
+.book-category{
+    width: 100%;
+}
+
+.book-category h3{
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.category-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: .5rem;
+    max-height: 80px;
+    overflow: auto;
+}
+
+.category-list .category{
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: .2rem .5rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+.pages :hover{
+    color:chartreuse;
+}
+
+.page{
+    margin: .5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.page:hover{
+    text-decoration: underline;
+}
+
+.none{
+    display: none;
+}
